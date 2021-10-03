@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>MDonHTML JS</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet"> 
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand">MDonHTML JS</a>
+      <p class="navbar-text">by Nakshatra Ranjan Saha (OCEAN OF ANYTHING)</p>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <p style="padding-left: 16px; padding-right: 16px;" class="navbar-btn">
+            <a href="https://github.com/OCEANOFANYTHINGOFFICIAL/mdonhtml.js" class="btn btn-default">Check On GitHub</a>
+          </p>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</head>
+
+<body style="padding-top: 70px;">
+<!-- The following <markdown> and </markdown> tags contain all of the markdown text to be rendered by "tagdown.min.js" -->
+<div class="container">
+  <markdown>
+
+    ### About
+
+    Tagdown JS is a simple javascript file that can be linked as a script source to render Markdown to HTML dynamically, without the need for any server-side conversion.
+
+    Dynamic rendering allows for faster writing and documentation via GitHub Pages.
+
+    **Please note** that any section of Markdown text cannot contain the string <xmp>`</markdown>`</xmp> unless it is enclosed in <xmp>`<xmp>`</xmp> tags.
+
+  All of the text that you see on the main body of this page was written in Markdown and rendered into HTML by the script.
+
+  Two scripts are provided:
+  * `mdonhtml.js` *(standard)*
+  * Readable, clean code
+  * `mdonhtml.min.js` *(minified)*
+  * Faster rendering
+  * Faster page loading
+  * Smaller file size
+
+  If you are just going to be using the script without modificaion, link `mdonhtml.min.js` *(minified)* for rendering.
+  ---
+
+  ### Usage
+
+  * Include the script source in the bottom of your HTML file.
+  * <xmp>`<script src="https://OCEANOFANYTHINGOFFICIAL.github.io/mdonhtml.js/scripts/mdonhtml.min.js"></script>`</xmp>
+  * Place all Markdown text between <xmp>`<markdown>` and `</markdown>`</xmp> tags.
+
+  ##### Copy the HTML template below and paste it into a file server:
+
+  <xmp>
+    ```html
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>MDonHTML Example</title>
+    </head>
+
+    <body>
+    <markdown>
+      # Markdown text goes in here
+
+      ## Chapter 1
+
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+      et dolore magna aliqua.
+
+      ## Chapter 2
+
+      Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+      aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+      culpa qui officia deserunt mollit anim id est laborum.
+    </markdown>
+    <script src="https://OCEANOFANYTHINGOFFICIAL.github.io/mdonhtml.js/scripts/mdonhtml.min.js"></script>
+    </body>
+    </html>
+    ```
+  </xmp>
+
+  To see a working example of the above code, click [here](example.html).
+
+  ---
+
+  ### File Information
+
+  > **Filenames:** "`mdonhtml.js`" and "`mdonhtml.min.js`"
+
+  > **Author:** "Nakshatra Ranjan Saha (OCEAN OF ANYTHING)"
+
+  > **Email:** "oceanofanything@gmail.com"
+
+  > **GitHub:** "github.com/spikespaz/tagdownjs"
+
+  > **Website:** "https://github.com/OCEANOFANYTHINGOFFICIAL/mdonhtml.js"
+
+  > **Description:** "A script to dynamically render Markdown text as HTML."
+  ---
+  </markdown>
+</div>
+
+<!-- Formatting comparison -->
+<div class="container">
+  <!-- Main panel -->
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <button type="button" class="btn btn-default spoiler-trigger" data-toggle="collapse">Formatting Comparison <b>+</b></button>
+    </div>
+    <div class="panel-collapse collapse out">
+      <div class="panel-body">
+        <!-- Inner container -->
+        <div style="width: inherit;" class="container">
+          <div class="row">
+            <!-- Markdown panel -->
+            <div class="col-md-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Markdown</h3>
+                </div>
+                <div style="height: 465px;" class="panel-body"><pre><code><xmp># Header 1
+## Header 2
+
+Paragraph text
+
+`Code string`
+
+**Bold text**
+
+_Italic text_
+
+```
+Code block
+Line 1
+Line 2
+Line 3
+```</xmp></code></pre></div>
+              </div>
+            </div><!-- Markdown panel -->
+            <!-- HTML panel -->
+            <div class="col-md-4">
+              <div class="panel panel-primary">
+                <div class="panel-heading">
+                  <h3 class="panel-title">HTML</h3>
+                </div>
+                <div style="height: 465px;" class="panel-body"><pre><code><xmp><h1>Header 1</h1>
+<h2>Header 2</h2>
+
+<p>Paragraph text</p>
+
+<p><code>Code string</code></p>
+
+<p><b>Bold text</b></p>
+
+<p><i>Italic text</i></p>
+
+<pre><code>Code block
+Line 1
+Line 2
+Line 3</code></pre></xmp></code></pre></div>
+              </div>
+            </div><!-- HTML panel -->
+            <!-- Result panel -->
+            <div class="col-md-4">
+              <div class="panel panel-success">
+                <div class="panel-heading">
+                  <h3 class="panel-title">Result</h3>
+                </div>
+                <div style="height: 465px;" class="panel-body"><h1>Header 1</h1>
+<h2>Header 2</h2>
+
+<p>Paragraph text</p>
+
+<p><code>Code string</code></p>
+
+<p><b>Bold text</b></p>
+
+<p><i>Italic text</i></p>
+
+<pre><code>Code block
+Line 1
+Line 2
+Line 3</code></pre></div>
+              </div>
+            </div><!-- Result panel -->
+          </div>
+        </div><!-- Inner container -->
+      </div>
+    </div>
+  </div><!-- Main panel -->
+</div><!-- Formatting comparison -->
+
+<!-- Download Scripts and License Panel -->
+<center>
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3>Download Scripts</h3>
+    </div>
+    <div class="panel-body">
+      <a class="btn btn-info" href="scripts/mdonhtml.js">Source Script</a>
+      <a class="btn btn-info" href="scripts/mdonhtml.min.js">Minified Script</a>
+    </div>
+  </div>
+
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <button type="button" class="btn btn-default btn-sm spoiler-trigger" data-toggle="collapse">MIT License <b>+</b></button>
+    </div>
+    <div class="panel-collapse collapse out">
+      <div class="panel-body" style="max-width: 550px;">
+        <h5>The MIT License (MIT)</h5>
+        <code>Copyright &copy; 2021 - 3021 Nakshatra Ranjan Saha (OCEAN OF ANYTHING)</code>
+        <p style="text-indent:40px" align="left">
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+        </p>
+        <p align="left">
+          <i>
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+          </i>
+        </p>
+        <p style="text-indent:40px" align="left">
+          <b>
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+          </b>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Footer, with Copyright -->
+<div class="well well-sm">
+  <code>MDonHTML JS - Copyright &copy; 2016, Nakshatra Ranjan Saha (OCEAN OF ANYTHING) (MIT Licensed)</code>
+</div>
+</center>
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="js/jquery.1.11.3.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Include "tagdown.js" Markdown script & code for spoilers -->
+  <script src="scripts/tagdown.min.js"></script>
+  <script>$(".spoiler-trigger").click(function(){$(this).parent().next().collapse('toggle');});</script>
+</body>
+</html>
