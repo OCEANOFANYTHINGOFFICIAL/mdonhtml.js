@@ -1,6 +1,6 @@
 /**
  * Link this file as a script source. For production, you should be using the minified version!
- *     <script src="http://oceanofanythingofficial.github.io/mdtohtml/scripts/mdtohtml.min.js"></script>
+ *     <script src="http://oceanofanythingofficial.github.io/mdonhtml.js/scripts/mdonhtml.min.js"></script>
  *
  * Enclose your Markdown text in <markdown> and </markdown> tags.
 
