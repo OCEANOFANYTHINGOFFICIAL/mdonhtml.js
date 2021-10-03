@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>MDonHTML JS</title>
   <link href="css/bootstrap.min.css" rel="stylesheet"> 
 <nav class="navbar navbar-inverse navbar-fixed-top">
@@ -20,7 +19,6 @@
       <p class="navbar-text">by Nakshatra Ranjan Saha (OCEAN OF ANYTHING)</p>
     </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
       </ul>
@@ -31,13 +29,12 @@
           </p>
         </li>
       </ul>
-    </div><!-- /.navbar-collapse -->
-  </div><!-- /.container-fluid -->
+    </div>
+  </div>
 </nav>
 </head>
 
 <body style="padding-top: 70px;">
-<!-- The following <markdown> and </markdown> tags contain all of the markdown text to be rendered by "tagdown.min.js" -->
 <div class="container">
   <markdown>
 
@@ -121,19 +118,16 @@
   </markdown>
 </div>
 
-<!-- Formatting comparison -->
+
 <div class="container">
-  <!-- Main panel -->
   <div class="panel panel-default">
     <div class="panel-heading">
       <button type="button" class="btn btn-default spoiler-trigger" data-toggle="collapse">Formatting Comparison <b>+</b></button>
     </div>
     <div class="panel-collapse collapse out">
       <div class="panel-body">
-        <!-- Inner container -->
         <div style="width: inherit;" class="container">
           <div class="row">
-            <!-- Markdown panel -->
             <div class="col-md-4">
               <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -157,8 +151,7 @@ Line 2
 Line 3
 ```</xmp></code></pre></div>
               </div>
-            </div><!-- Markdown panel -->
-            <!-- HTML panel -->
+            </div>
             <div class="col-md-4">
               <div class="panel panel-primary">
                 <div class="panel-heading">
@@ -180,8 +173,7 @@ Line 1
 Line 2
 Line 3</code></pre></xmp></code></pre></div>
               </div>
-            </div><!-- HTML panel -->
-            <!-- Result panel -->
+            </div>
             <div class="col-md-4">
               <div class="panel panel-success">
                 <div class="panel-heading">
@@ -203,15 +195,14 @@ Line 1
 Line 2
 Line 3</code></pre></div>
               </div>
-            </div><!-- Result panel -->
+            </div>
           </div>
-        </div><!-- Inner container -->
+        </div>
       </div>
     </div>
-  </div><!-- Main panel -->
-</div><!-- Formatting comparison -->
+  </div>
+</div>
 
-<!-- Download Scripts and License Panel -->
 <center>
 <div class="container">
   <div class="panel panel-default">
@@ -261,18 +252,14 @@ SOFTWARE.
     </div>
   </div>
 </div>
-<!-- Footer, with Copyright -->
 <div class="well well-sm">
   <code>MDonHTML JS - Copyright &copy; 2016, Nakshatra Ranjan Saha (OCEAN OF ANYTHING) (MIT Licensed)</code>
 </div>
 </center>
 
-  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="js/jquery.1.11.3.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="js/bootstrap.min.js"></script>
-  <!-- Include "tagdown.js" Markdown script & code for spoilers -->
-  <script src="scripts/tagdown.min.js"></script>
+  <script src="scripts/mdonhtml.min.js"></script>
   <script>$(".spoiler-trigger").click(function(){$(this).parent().next().collapse('toggle');});</script>
 </body>
 </html>
